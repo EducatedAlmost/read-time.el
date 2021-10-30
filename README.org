@@ -1,4 +1,6 @@
-#+TITLE: read-time.el
+* æ/read-time.el
+
+Read the blog post: https://blog.almost.education/posts/read-time-el
 
 ~read-time.el~ is a package that calculates how long it takes to read something. It contains one function ~read-time~ and one variable ~read-time-words-per-sec~.
 
@@ -10,9 +12,9 @@ An interactive function that uses the region if active, or the whole buffer if n
 
 The speed can be specified, in order of preference, as a third argument, ~read-time-words-per-sec~, or a default value of 5 words per second.
 
-* Installation
+** Installation
 
-** Doom Emacs
+*** Doom Emacs
 
 In ~packages.el~:
 #+begin_src elisp
@@ -25,7 +27,7 @@ In ~config.el~:
 (setq read-time-words-per-sec 6) ;; optional
 #+end_src
 
-* Usage
+** Usage
 
 Call ~read-time~ interactively, either with a region or without.
 
